@@ -13,8 +13,8 @@ function Usersignout() {
     Email:"",
     password:"",
     Conformpassword:"",
-    date:date,
-    gender:selectedGender,
+    date:"",
+    gender:"",
 
   });
   
@@ -24,7 +24,9 @@ function Usersignout() {
   };
   const onSubmit= async (e)=>{
     e.preventDefault();
-    await axios.post(`${process.env.REACT_APP_BACKEND_PORT}/sign/post`,register)
+    await axios.post(`${process.env.REACT_APP_BACKEND_PORT}/sign/post`,register).then((res) => {
+
+    })
   }
   const [selectedGender, setSelectedGender] = useState('');
   const handleGenderChange = (event) => {
