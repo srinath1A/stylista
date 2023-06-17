@@ -4,6 +4,9 @@ import axios from "axios";
 import "./User.css";
  const Viewpage  = () => {
     let navigate =useNavigate();
+    function handleClick() {
+        navigate("/Usersignout");
+      }
     const [errorMessage,setErrorMessage] =useState('');
     const[login,setLogin] = useState({
         email:"",
@@ -56,7 +59,7 @@ import "./User.css";
                     <input type='submit' value="Login" onClick={(e)=>onsubmit(e)}></input>
                     <text>New to Stylistaapp?</text>
                 <div className='new'>
-                    <Link  className="line1" to='Usersignout'>SIGNUP</Link>
+                    <p className="line1" onClick={handleClick}>SIGNUP</p>
                 </div>
             </form>
         </div>

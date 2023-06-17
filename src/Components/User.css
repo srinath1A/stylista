@@ -21,7 +21,6 @@
     margin-left: 10%;
     width: 380px;
     height: 420px;
-    background: #fff;
     border-radius: 8px;
     overflow: hidden;
     
@@ -80,7 +79,7 @@
     width:300px;
     margin-top: 35px;
 }
-.main form .inputBox input{
+/* .main form .inputBox input{
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -93,11 +92,28 @@
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
+} */
+.main form .inputBox input{
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30PX;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    background:transparent;
+    color: #fff;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+    z-index: 10;
+    padding-left: 10px;
+    
 }
 .main form .inputBox span{
     position: absolute;
     left: 0;
-    padding: 20px 0px 10px;
+    padding-top: 6px;
+    padding-left: 3px;
     pointer-events: none;
     color: #8f8f8f;
     font-size: 1em;
@@ -107,13 +123,14 @@
 .main form .inputBox input:valid ~ span,
 .main form .inputBox input:focus ~ span
 {
-    color:white;
+    color:white; 
     font-size: 0.75em;
     transform: translateY(-34px);
 }
-.main form .inputBox i
+  .main form .inputBox i
 {
-    position:absolute;
+    position:absolute ;
+    margin-bottom: 29px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -123,17 +140,12 @@
     overflow: hidden;
     transition: 0.5s;
     pointer-events: none;
-}
+} 
 .main form .inputBox input:valid ~ i,
 .main form .inputBox input:focus ~ i
 {
     height: 4px;
 }
-/* .main form .links{
-display: flex;
-justify-content: space-between;
-
-} */
 .links {
     margin: 10px 0;
     font-size: 13.5px;
@@ -144,22 +156,17 @@ justify-content: space-between;
     text-decoration: none;
     color: #8f8f8f;
     padding-left: 65%;
-    
+  
 }
 .line:hover{
     color:rgb(15, 131, 246);
 }
-/* .main form .links a:nth-child(2)
-{
-    color:#fff;
-} */
-
 .main form input[type="submit"]
 {
     border: none;
     outline: none;
     padding: 9px 25px;
-    background: #fff;
+     background: #fff;
     cursor: pointer;
     font-size: 0.9em;
     border-radius: 4px;
@@ -170,9 +177,7 @@ justify-content: space-between;
 {
     opacity: 0.8;
 }
-.grid{
-    border: 1px solid white;
-}
+
 .new {
     display:flex;
     justify-content:center;
@@ -195,6 +200,7 @@ justify-content: space-between;
     position: absolute;
     text-decoration: none;
     color: #8f8f8f;
+    cursor: pointer;
 }
 .line1:hover{
     color:rgb(15, 131, 246);
@@ -268,7 +274,7 @@ justify-content: space-between;
     width:300px;
     margin-top: 35px;
 }
-.main2 form .inputBox2 input{
+/* .main2 form .inputBox2 input{
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -281,11 +287,27 @@ justify-content: space-between;
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
+} */
+.main2 form .inputBox2 input{
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 30PX;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    background:transparent;
+    color: #fff;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+    z-index: 10;
+    padding-left: 10px;
 }
 .main2 form .inputBox2 span{
     position: absolute;
     left: 0;
-    padding: 20px 0px 10px;
+    padding-top: 6px;
+    padding-left: 3px;
     pointer-events: none;
     color: #8f8f8f;
     font-size: 1em;
@@ -302,6 +324,7 @@ justify-content: space-between;
 .main2 form .inputBox2 i
 {
     position:absolute;
+    margin-bottom: 29px;
     left: 0;
     bottom: 0;
     width: 100%;

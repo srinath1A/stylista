@@ -44,7 +44,7 @@ function Usersignout() {
      <img src="./images/pic.jpg.jpeg" alt=""></img>
     <div className="usercontainer">
     <div className='Usersignuppage'>
-      <div className='usersignup'>
+  
         <form>
           <h2>Create New Account</h2>
           <div className='userinputbox'>
@@ -133,7 +133,7 @@ function Usersignout() {
         </form>
       </div>
     </div>
-    </div>
+  
     </div>
     </>
     
